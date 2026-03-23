@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const GRADE_LABELS: Record<string, string> = {
   A: "You're crushing it — small wins left to find.",
   B: "Solid foundation. A few fixes could unlock serious growth.",
@@ -20,6 +18,7 @@ const GRADE_COLORS: Record<string, string> = {
 };
 
 export async function POST(req: NextRequest) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const { email, grade, score, tips } = await req.json();
 
