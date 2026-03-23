@@ -84,8 +84,8 @@ export default function About() {
 
           {/* Photo placeholder */}
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
@@ -103,7 +103,7 @@ export default function About() {
               <div className="absolute inset-0 rounded-3xl border-2 border-[#FF2D55]/20" />
             </div>
             {/* Floating badge */}
-            <div className="absolute -bottom-6 -left-6 bg-[#FF2D55] text-white rounded-2xl px-5 py-4 shadow-xl">
+            <div className="absolute -bottom-6 left-6 bg-[#FF2D55] text-white rounded-2xl px-5 py-4 shadow-xl">
               <div className="text-2xl font-extrabold">4.2x</div>
               <div className="text-xs font-semibold opacity-80">Avg ROAS</div>
             </div>
