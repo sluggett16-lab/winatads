@@ -18,7 +18,7 @@ export default function Ticker() {
   const repeated = [...items, ...items];
 
   return (
-    <div className="bg-[#FF2D55] py-3.5 overflow-hidden">
+    <div className="bg-[#FF2D55] py-3.5" style={{ overflow: "clip" }}>
       <div
         className="flex whitespace-nowrap"
         style={{ animation: "ticker 28s linear infinite" }}
