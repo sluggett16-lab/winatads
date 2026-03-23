@@ -41,9 +41,9 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05] tracking-tight mb-2">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05] tracking-tight mb-2">
           <span className="text-white">Your </span>
-          <span className="relative inline-block min-w-[8rem] text-left">
+          <span className="relative inline-block min-w-[6rem] md:min-w-[8rem] text-left">
             {mounted ? (
               <AnimatePresence mode="wait">
                 <motion.span
@@ -67,7 +67,7 @@ export default function Hero() {
           <span className="text-white">Should Be Winning.</span>
 
         </h1>
-        <p className="text-3xl md:text-4xl font-extrabold text-[#FF2D55]/70 mt-2 mb-10">
+        <p className="text-2xl md:text-4xl font-extrabold text-[#FF2D55]/70 mt-2 mb-10">
           Want to fix that?
         </p>
 
@@ -78,10 +78,10 @@ export default function Hero() {
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
           <a
             href="#contact"
-            className="group inline-flex items-center gap-2 bg-[#FF2D55] hover:bg-[#CC2444] text-white font-bold px-8 py-4 rounded-full text-base transition-all duration-200 hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(255,45,85,0.3)]"
+            className="group inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-[#FF2D55] hover:bg-[#CC2444] text-white font-bold px-8 py-4 rounded-full text-base transition-all duration-200 hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(255,45,85,0.3)]"
           >
             Get a Free Audit
             <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 16 16" fill="none">
@@ -90,7 +90,7 @@ export default function Hero() {
           </a>
           <a
             href="#case-studies"
-            className="inline-flex items-center gap-2 border border-white/20 hover:border-white/50 text-white/70 hover:text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200"
+            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto border border-white/20 hover:border-white/50 text-white/70 hover:text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200"
           >
             See Results
           </a>
@@ -99,7 +99,7 @@ export default function Hero() {
               const event = new CustomEvent("open-audit-quiz");
               window.dispatchEvent(event);
             }}
-            className="inline-flex items-center gap-2 bg-white/[0.06] border border-white/20 hover:border-[#FF2D55]/60 hover:bg-[#FF2D55]/10 text-white font-bold px-8 py-4 rounded-full text-base transition-all duration-200"
+            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-white/[0.06] border border-white/20 hover:border-[#FF2D55]/60 hover:bg-[#FF2D55]/10 text-white font-bold px-8 py-4 rounded-full text-base transition-all duration-200"
           >
             Grade My Ads 📋
           </button>

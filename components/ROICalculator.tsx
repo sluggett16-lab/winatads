@@ -92,7 +92,7 @@ export default function ROICalculator() {
   };
 
   return (
-    <section id="roi-calculator" className="py-24 md:py-32 bg-[#F8F8FC] px-6">
+    <section id="roi-calculator" className="py-24 md:py-32 bg-[#F8F8FC] px-6 overflow-x-clip">
       <div className="max-w-7xl mx-auto" ref={ref}>
         {/* Header */}
         <motion.div
@@ -116,10 +116,10 @@ export default function ROICalculator() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           {/* Controls */}
           <motion.div
-            initial={{ opacity: 0, x: -24 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0, y: 24 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.15 }}
-            className="bg-white rounded-3xl p-8 shadow-sm border border-[#0F0E17]/[0.06] space-y-8"
+            className="bg-white rounded-3xl p-5 md:p-8 shadow-sm border border-[#0F0E17]/[0.06] space-y-8"
           >
             {/* Monthly Spend */}
             <div>
@@ -193,8 +193,8 @@ export default function ROICalculator() {
 
           {/* Results */}
           <motion.div
-            initial={{ opacity: 0, x: 24 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0, y: 24 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.25 }}
             className="space-y-4"
           >
