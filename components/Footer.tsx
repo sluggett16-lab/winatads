@@ -6,9 +6,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo */}
-          <a href="#" className="text-xl font-extrabold tracking-tight">
-            <span className="text-[#FF2D55]">Win</span>
-            <span className="text-white"> at Ads</span>
+          <a href="#" className="flex items-center gap-1.5">
+            <span className="inline-block -rotate-2 bg-[#FF2D55] text-white font-extrabold italic px-2.5 py-0.5 rounded-md text-xl tracking-tight">
+              Win
+            </span>
+            <span className="text-white font-extrabold text-xl tracking-tight"> at Ads</span>
           </a>
 
           {/* Links */}

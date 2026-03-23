@@ -55,12 +55,21 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.25 }}
+              className="text-[#0F0E17]/60 text-lg leading-relaxed mb-6"
+            >
+              Yes, it&apos;s just me. That&apos;s the point. When you work with Win at Ads,
+              you&apos;re not handed off to a junior account manager — you get me,
+              personally, in your accounts every day.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.3 }}
               className="text-[#0F0E17]/60 text-lg leading-relaxed mb-8"
             >
-              I built Win at Ads because most agencies talk a big game but
-              optimize for their retainer, not your ROI. I do things differently
-              — obsessively, transparently, and with your revenue as the only
-              metric that matters.
+              I built Win at Ads because most agencies optimize for their
+              retainer, not your ROI. I do things differently — obsessively,
+              transparently, and with your revenue as the only metric that matters.
             </motion.p>
 
             {/* Credentials */}

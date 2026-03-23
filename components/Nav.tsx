@@ -34,13 +34,11 @@ export default function Nav() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
-          <span className="text-xl font-extrabold tracking-tight">
-            <span className="text-[#FF2D55] group-hover:text-white transition-colors duration-300">
-              Win
-            </span>
-            <span className="text-white"> at Ads</span>
+        <a href="#" className="flex items-center gap-1.5 group">
+          <span className="relative inline-block -rotate-2 bg-[#FF2D55] text-white font-extrabold italic px-2.5 py-0.5 rounded-md text-xl tracking-tight transition-transform duration-300 group-hover:rotate-0 group-hover:scale-105">
+            Win
           </span>
+          <span className="text-white font-extrabold text-xl tracking-tight"> at Ads</span>
         </a>
 
         {/* Desktop links */}

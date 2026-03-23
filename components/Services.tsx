@@ -122,7 +122,7 @@ export default function Services() {
             transition={{ duration: 0.5 }}
             className="text-[#FF2D55] font-semibold text-sm uppercase tracking-widest mb-4"
           >
-            What We Do
+            The Arsenal
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 24 }}
@@ -130,8 +130,8 @@ export default function Services() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-2xl"
           >
-            Every service, built to
-            <span className="text-[#FF2D55]"> drive revenue.</span>
+            Everything you need to stop
+            <span className="text-[#FF2D55]"> losing money on ads.</span>
           </motion.h2>
         </div>
 

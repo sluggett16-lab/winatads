@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "Do you handle creative, or just the ad management?",
-    a: "Both. We can manage campaigns using your existing creative, or we can develop ad creative as part of the engagement — copy, static assets, video concepts, and UGC briefs included.",
+    a: "Both. We can manage campaigns using your existing creative, or we can develop ad creative as part of the engagement — copy and static assets included. Note: for video-based platforms like YouTube, we manage the campaigns and strategy but don't produce video content.",
   },
   {
     q: "How do you report on performance?",

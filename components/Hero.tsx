@@ -37,11 +37,11 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-sm text-white/60 mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-[#FF2D55] animate-pulse" />
-          Results-obsessed paid media
+          Certified ad nerds. (The fun kind.)
         </div>
 
         {/* Headline */}
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05] tracking-tight mb-6">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05] tracking-tight mb-2">
           <span className="text-white">Your </span>
           <span className="relative inline-block min-w-[8rem] text-left">
             {mounted ? (
@@ -65,14 +65,16 @@ export default function Hero() {
           </span>
           <br />
           <span className="text-white">Should Be Winning.</span>
-          <br />
-          <span className="text-white/40">Are They?</span>
+
         </h1>
+        <p className="text-3xl md:text-4xl font-extrabold text-[#FF2D55]/70 mt-2 mb-10">
+          Want to fix that?
+        </p>
 
         {/* Subhead */}
         <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto mb-10 leading-relaxed">
-          We manage high-performance paid ad campaigns for SMBs and agency
-          partners. No fluff, no vanity metrics — just revenue.
+          We run paid ads like it&apos;s personal. Because your budget is real money
+          and wasting it is a crime. No fluff, no retainer-padding — just ads that convert.
         </p>
 
         {/* CTAs */}
@@ -92,13 +94,23 @@ export default function Hero() {
           >
             See Results
           </a>
+          <button
+            onClick={() => {
+              const event = new CustomEvent("open-audit-quiz");
+              window.dispatchEvent(event);
+            }}
+            className="inline-flex items-center gap-2 bg-white/[0.06] border border-white/20 hover:border-[#FF2D55]/60 hover:bg-[#FF2D55]/10 text-white font-bold px-8 py-4 rounded-full text-base transition-all duration-200"
+          >
+            Grade My Ads 📋
+          </button>
         </div>
 
-        {/* Scroll hint */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 text-xs">
-          <span>Scroll</span>
-          <div className="w-px h-8 bg-gradient-to-b from-white/30 to-transparent" />
-        </div>
+      </div>
+
+      {/* Scroll hint */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 text-xs">
+        <span>Scroll</span>
+        <div className="w-px h-8 bg-gradient-to-b from-white/30 to-transparent" />
       </div>
     </section>
   );

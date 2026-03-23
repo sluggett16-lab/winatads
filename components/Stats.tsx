@@ -4,10 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
 const stats = [
-  { value: 12, suffix: "M+", prefix: "$", label: "Ad Spend Managed" },
-  { value: 200, suffix: "+", prefix: "", label: "Campaigns Launched" },
+  { value: 12, suffix: "M+", prefix: "$", label: "Revenue Driven" },
+  { value: 200, suffix: "+", prefix: "", label: "Campaigns Crushed" },
   { value: 4.2, suffix: "x", prefix: "", label: "Average ROAS" },
-  { value: 7, suffix: " yrs", prefix: "", label: "Of Experience" },
+  { value: 7, suffix: " yrs", prefix: "", label: "Years of Domination" },
 ];
 
 function Counter({

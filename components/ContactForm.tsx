@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import confetti from "canvas-confetti";
 
 export default function ContactForm() {
   const ref = useRef(null);
@@ -29,6 +30,12 @@ export default function ContactForm() {
       if (res.ok) {
         setStatus("sent");
         setForm({ name: "", email: "", company: "", message: "" });
+        confetti({
+          particleCount: 120,
+          spread: 80,
+          origin: { y: 0.6 },
+          colors: ["#FF2D55", "#FF6B35", "#F8F8FC", "#9B59B6"],
+        });
       } else {
         setStatus("error");
       }
@@ -63,8 +70,9 @@ export default function ContactForm() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6"
             >
-              Ready to make your
-              <span className="text-[#FF2D55]"> ads win?</span>
+              Your ads called.
+              <br />
+              <span className="text-[#FF2D55]">They want better management.</span>
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -72,9 +80,8 @@ export default function ContactForm() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-white/50 text-lg leading-relaxed mb-8"
             >
-              Tell us about your business and goals. We&apos;ll get back to you
-              within one business day — no sales pitches, just a real
-              conversation about what&apos;s possible.
+              Tell us what&apos;s going on with your ads. We&apos;ll be honest
+              even if it hurts — and then we&apos;ll fix it.
             </motion.p>
 
             <motion.div
@@ -84,9 +91,9 @@ export default function ContactForm() {
               className="space-y-5"
             >
               {[
-                { icon: "⚡", text: "Free audit for new clients" },
-                { icon: "📅", text: "Response within 1 business day" },
-                { icon: "🇨🇦", text: "Canada & USA clients welcome" },
+                { icon: "⚡", text: "No sales pitch — just a real conversation" },
+                { icon: "🎯", text: "We'll tell you exactly what's broken (for free)" },
+                { icon: "🇨🇦", text: "Canada & USA — we've got you" },
               ].map((item) => (
                 <div key={item.text} className="flex items-center gap-4">
                   <span className="text-xl">{item.icon}</span>

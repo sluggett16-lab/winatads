@@ -64,10 +64,13 @@ export default function CaseStudies() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-16"
           >
-            <h2 className="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-2xl">
-              Real campaigns.
-              <span className="text-[#FF2D55]"> Real numbers.</span>
-            </h2>
+            <div>
+              <h2 className="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-2xl">
+                Real campaigns.
+                <span className="text-[#FF2D55]"> Real numbers.</span>
+              </h2>
+              <p className="text-white/30 text-sm mt-2">These numbers are wild. We know.</p>
+            </div>
             <p className="text-white/40 text-sm max-w-xs">
               *Mock data shown. Real results vary by industry, budget, and baseline.
             </p>
