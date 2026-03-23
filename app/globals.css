@@ -5,33 +5,35 @@
   --color-light: #F8F8FC;
   --color-pink: #FF2D55;
   --color-pink-dim: #CC2444;
-  --color-muted: #6B6B80;
   --font-sans: "Plus Jakarta Sans", sans-serif;
   --animate-ticker: ticker 28s linear infinite;
   --animate-grain: grain 0.4s steps(1) infinite;
-  --keyframes-ticker: { from { transform: translateX(0); } to { transform: translateX(-50%); } };
-  --keyframes-grain: {
-    0%,100% { transform: translate(0,0) }
-    10% { transform: translate(-5%,-10%) }
-    20% { transform: translate(-15%,5%) }
-    30% { transform: translate(7%,-25%) }
-    40% { transform: translate(-5%,25%) }
-    50% { transform: translate(-15%,10%) }
-    60% { transform: translate(15%,0%) }
-    70% { transform: translate(0%,15%) }
-    80% { transform: translate(3%,35%) }
-    90% { transform: translate(-10%,10%) }
-  };
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; }
 
 body {
   background-color: #0F0E17;
   color: #F8F8FC;
-  font-family: "Plus Jakarta Sans", sans-serif;
   overflow-x: hidden;
 }
 
@@ -50,31 +52,10 @@ body {
   z-index: 9999;
 }
 
-@keyframes grain {
-  0%, 100% { transform: translate(0, 0); }
-  10% { transform: translate(-5%, -10%); }
-  20% { transform: translate(-15%, 5%); }
-  30% { transform: translate(7%, -25%); }
-  40% { transform: translate(-5%, 25%); }
-  50% { transform: translate(-15%, 10%); }
-  60% { transform: translate(15%, 0%); }
-  70% { transform: translate(0%, 15%); }
-  80% { transform: translate(3%, 35%); }
-  90% { transform: translate(-10%, 10%); }
-}
-
-@keyframes ticker {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #0F0E17; }
 ::-webkit-scrollbar-thumb { background: #FF2D55; border-radius: 2px; }
 
-/* Pink glow text */
 .text-glow { text-shadow: 0 0 60px rgba(255,45,85,0.5); }
-
-/* Selection color */
 ::selection { background: #FF2D55; color: #fff; }
