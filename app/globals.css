@@ -59,3 +59,8 @@ body {
 
 .text-glow { text-shadow: 0 0 60px rgba(255,45,85,0.5); }
 ::selection { background: #FF2D55; color: #fff; }
+
+/* Ensure motion elements that haven't hydrated show at full opacity */
+[data-framer-motion-viewport-once] {
+  opacity: 1 !important;
+}
