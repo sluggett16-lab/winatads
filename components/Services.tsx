@@ -112,7 +112,7 @@ export default function Services() {
   const titleInView = useInView(titleRef, { once: true, margin: "-60px" });
 
   return (
-    <section id="services" className="py-24 md:py-32 bg-[#0F0E17] px-6">
+    <section id="services" className="pt-12 pb-24 md:pt-16 md:pb-32 bg-[#0F0E17] px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div ref={titleRef} className="mb-16">
@@ -128,10 +128,10 @@ export default function Services() {
             initial={{ opacity: 0, y: 24 }}
             animate={titleInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-2xl"
+            className="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-3xl"
           >
-            Everything you need to stop
-            <span className="text-[#FF2D55]"> losing money on ads.</span>
+            Everything you need to <span className="text-[#FF2D55]">stop</span>{" "}
+            <span className="text-[#FF2D55]">losing money on ads.</span>
           </motion.h2>
         </div>
 

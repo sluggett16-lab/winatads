@@ -18,7 +18,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0F0E17] px-6">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0F0E17] px-6" style={{ willChange: "auto" }}>
       {/* Grid background */}
       <div
         className="absolute inset-0 opacity-[0.04]"
@@ -30,7 +30,7 @@ export default function Hero() {
       />
 
       {/* Pink glow blob */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full bg-[#FF2D55] opacity-[0.06] blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[250px] md:w-[700px] md:h-[400px] rounded-full bg-[#FF2D55] opacity-[0.06] blur-[80px] md:blur-[120px] pointer-events-none" />
 
       {/* Content — always visible, no opacity:0 initial state */}
       <div className="relative z-10 text-center max-w-5xl mx-auto">
@@ -41,31 +41,27 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05] tracking-tight mb-2">
-          <span className="text-white">Your </span>
-          <span className="relative inline-block min-w-[6rem] md:min-w-[8rem] text-left">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.1] tracking-tight mb-2">
+          <span className="block text-white">
+            Your{" "}
             {mounted ? (
               <AnimatePresence mode="wait">
                 <motion.span
                   key={platforms[index]}
-                  initial={{ y: 40, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: -40, opacity: 0 }}
-                  transition={{ duration: 0.4, ease: "easeInOut" }}
-                  className="inline-block text-[#FF2D55] text-glow"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="text-[#FF2D55]"
                 >
                   {platforms[index]}
                 </motion.span>
               </AnimatePresence>
             ) : (
-              <span className="inline-block text-[#FF2D55] text-glow">
-                {platforms[0]}
-              </span>
+              <span className="text-[#FF2D55]">{platforms[0]}</span>
             )}
           </span>
-          <br />
-          <span className="text-white">Should Be Winning.</span>
-
+          <span className="block text-white">Should Be Winning.</span>
         </h1>
         <p className="text-2xl md:text-4xl font-extrabold text-[#FF2D55]/70 mt-2 mb-10">
           Want to fix that?
@@ -108,9 +104,8 @@ export default function Hero() {
       </div>
 
       {/* Scroll hint */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 text-xs">
-        <span>Scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-white/30 to-transparent" />
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-white/20 text-xs pointer-events-none">
+        <div className="w-px h-6 bg-gradient-to-b from-white/20 to-transparent" />
       </div>
     </section>
   );

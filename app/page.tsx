@@ -32,12 +32,12 @@ export default function Home() {
       <Hero />
       <Ticker />
       <Stats />
-      <ROICalculator />
       <Services />
       <About />
       <Industries />
       <AgencyPartners />
       <CaseStudies />
+      <ROICalculator />
       <FAQ />
       <ContactForm />
       <Footer />

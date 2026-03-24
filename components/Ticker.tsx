@@ -22,7 +22,7 @@ export default function Ticker() {
     <div className="bg-[#FF2D55] py-3.5" style={{ overflow: "clip" }}>
       <div
         className="flex whitespace-nowrap"
-        style={{ animation: "ticker 28s linear infinite" }}
+        style={{ animation: "ticker 28s linear infinite", willChange: "transform" }}
       >
         {repeated.map((item, i) => (
           <span key={i} className="flex items-center">

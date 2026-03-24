@@ -31,7 +31,7 @@ export default function AgencyPartners() {
       className="relative py-24 md:py-32 bg-[#F8F8FC] px-6 overflow-hidden"
     >
       {/* Decorative bg shape */}
-      <div className="absolute right-0 top-0 w-[500px] h-[500px] bg-[#FF2D55] opacity-[0.04] rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+      <div className="hidden md:block absolute right-0 top-0 w-[500px] h-[500px] bg-[#FF2D55] opacity-[0.04] rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto" ref={ref}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

@@ -7,7 +7,7 @@ const stats = [
   { value: 12, suffix: "M+", prefix: "$", label: "Revenue Driven" },
   { value: 200, suffix: "+", prefix: "", label: "Campaigns Crushed" },
   { value: 4.2, suffix: "x", prefix: "", label: "Average ROAS" },
-  { value: 7, suffix: "+", prefix: "", label: "Years of Domination" },
+  { value: 7, suffix: "+", prefix: "", label: "Years of Winning" },
 ];
 
 function Counter({
