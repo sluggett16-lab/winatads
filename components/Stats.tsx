@@ -6,7 +6,7 @@ import { motion, useInView } from "framer-motion";
 const stats = [
   { value: 12, suffix: "M+", prefix: "$", label: "Revenue Driven" },
   { value: 200, suffix: "+", prefix: "", label: "Campaigns Crushed" },
-  { value: 4.2, suffix: "x", prefix: "", label: "Average ROAS" },
+  { value: 98, suffix: "%", prefix: "", label: "Client Retention" },
   { value: 7, suffix: "+", prefix: "", label: "Years of Winning" },
 ];
 
@@ -54,7 +54,7 @@ export default function Stats() {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="bg-[#0F0E17] py-16 border-y border-white/5">
+    <section ref={ref} className="bg-[#F8F8FC] py-16 border-y border-[#0F0E17]/5">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, i) => (
@@ -73,7 +73,7 @@ export default function Stats() {
                   started={inView}
                 />
               </div>
-              <div className="text-sm text-white/50 font-medium uppercase tracking-wider">
+              <div className="text-sm text-[#0F0E17]/50 font-medium uppercase tracking-wider">
                 {stat.label}
               </div>
             </motion.div>

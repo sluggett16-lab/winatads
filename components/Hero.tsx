@@ -33,7 +33,7 @@ export default function Hero() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[250px] md:w-[700px] md:h-[400px] rounded-full bg-[#FF2D55] opacity-[0.06] blur-[80px] md:blur-[120px] pointer-events-none" />
 
       {/* Content — always visible, no opacity:0 initial state */}
-      <div className="relative z-10 text-center max-w-5xl mx-auto">
+      <div className="relative z-10 text-center max-w-5xl mx-auto pt-24 md:pt-32">
         {/* Headline */}
         <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.1] tracking-tight mb-2">
           <span className="block text-white">
@@ -55,10 +55,10 @@ export default function Hero() {
               <span className="text-[#FF2D55]">{platforms[0]}</span>
             )}
           </span>
-          <span className="block text-white">Should Be Getting You More Customers.</span>
+          <span className="block text-white">Should Be Winning.</span>
         </h1>
         <p className="text-2xl md:text-4xl font-extrabold text-[#FF2D55]/70 mt-2 mb-10">
-          Let&apos;s make that happen.
+          Want to fix that?
         </p>
 
         {/* Subhead */}
@@ -73,7 +73,7 @@ export default function Hero() {
             href="#contact"
             className="group inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-[#FF2D55] hover:bg-[#CC2444] text-white font-bold px-8 py-4 rounded-full text-base transition-all duration-200 hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(255,45,85,0.3)]"
           >
-            Get a Free Audit
+            Start Winning Now
             <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>

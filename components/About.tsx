@@ -6,9 +6,9 @@ import { motion, useInView } from "framer-motion";
 
 const credentials = [
   "Google Ads Certified",
-  "Meta Blueprint Certified",
   "7+ Years Experience",
   "200+ Campaigns Managed",
+  "Canada & USA",
 ];
 
 export default function About() {
@@ -92,29 +92,43 @@ export default function About() {
             </motion.div>
           </div>
 
-          {/* Photo placeholder */}
+          {/* Photo + decorative layout */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative"
+            className="relative flex flex-col items-center gap-6"
           >
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-[#0F0E17]/10">
+            {/* Photo — constrained width */}
+            <div className="relative w-64 md:w-72 aspect-[3/4] rounded-3xl overflow-hidden bg-[#0F0E17]/10 shadow-xl mx-auto">
               <Image
                 src="/laura.jpg"
                 alt="Laura — Win at Ads founder"
                 fill
                 className="object-cover object-top"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="320px"
                 priority
               />
-              {/* Decorative border */}
               <div className="absolute inset-0 rounded-3xl border-2 border-[#FF2D55]/20 pointer-events-none" />
             </div>
-            {/* Floating badge */}
-            <div className="absolute -bottom-6 left-6 bg-[#FF2D55] text-white rounded-2xl px-5 py-4 shadow-xl">
-              <div className="text-2xl font-extrabold">4.2x</div>
-              <div className="text-xs font-semibold opacity-80">Avg ROAS</div>
+
+            {/* Decorative dots below photo */}
+            <div className="flex items-center justify-center gap-3">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#FF2D55]/40" />
+              <div className="flex gap-1.5">
+                {[1,2,3,4,5].map((i) => (
+                  <div
+                    key={i}
+                    className="rounded-full"
+                    style={{
+                      width: i === 3 ? 8 : i === 2 || i === 4 ? 6 : 4,
+                      height: i === 3 ? 8 : i === 2 || i === 4 ? 6 : 4,
+                      backgroundColor: i === 3 ? "#FF2D55" : i === 2 || i === 4 ? "#FF2D5580" : "#FF2D5530",
+                    }}
+                  />
+                ))}
+              </div>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#FF2D55]/40" />
             </div>
           </motion.div>
         </div>

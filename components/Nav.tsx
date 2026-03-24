@@ -60,7 +60,7 @@ export default function Nav() {
             href="#contact"
             className="inline-flex items-center gap-2 bg-[#FF2D55] hover:bg-[#CC2444] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 hover:scale-105 active:scale-95"
           >
-            Get a Free Audit
+            Start Winning Now
           </a>
         </div>
 
@@ -110,7 +110,7 @@ export default function Nav() {
                 onClick={() => setMenuOpen(false)}
                 className="inline-flex items-center justify-center bg-[#FF2D55] text-white text-sm font-semibold px-5 py-3 rounded-full mt-2"
               >
-                Get a Free Audit
+                Start Winning Now
               </a>
             </div>
           </motion.div>

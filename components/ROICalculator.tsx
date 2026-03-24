@@ -102,7 +102,7 @@ export default function ROICalculator() {
           className="mb-12"
         >
           <p className="text-[#FF2D55] font-semibold text-sm uppercase tracking-widest mb-4">
-            Free Calculator
+            ROI Calculator
           </p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F0E17] leading-tight max-w-2xl">
             What could your ads be{" "}
@@ -249,7 +249,7 @@ export default function ROICalculator() {
                 href="#contact"
                 className="w-full text-center bg-[#FF2D55] hover:bg-[#CC2444] text-white font-bold py-4 rounded-xl text-base transition-all duration-200 hover:scale-[1.02] active:scale-95"
               >
-                Claim my free audit →
+                Start Winning Now →
               </a>
               {!showEmailCapture && emailStatus !== "sent" && (
                 <button

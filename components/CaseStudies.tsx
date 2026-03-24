@@ -11,9 +11,9 @@ const cases = [
     results: [
       { metric: "Conversion Rate", before: "25%", after: "35%" },
       { metric: "Cost Per Booking", before: "$10", after: "$3" },
-      { metric: "Ad Spend", before: "Same", after: "Same" },
+      { metric: "Monthly Bookings", before: "Low", after: "3x increase" },
     ],
-    timeframe: "Same spend",
+    timeframe: "No budget increase",
     color: "#FF2D55",
   },
   {
@@ -21,11 +21,11 @@ const cases = [
     client: "B2B software platform",
     challenge: "Top-of-funnel campaigns weren't converting — leads were dropping off before purchase.",
     results: [
-      { metric: "Conversions", before: "Baseline", after: "+40%" },
-      { metric: "Strategy", before: "Top-funnel only", after: "Mid-funnel" },
-      { metric: "Pipeline Quality", before: "Low", after: "High" },
+      { metric: "New Leads / Mo", before: "1–2", after: "5–6" },
+      { metric: "Conversion Rate", before: "2%", after: "6%" },
+      { metric: "Strategy", before: "Segmented", after: "Integrated" },
     ],
-    timeframe: "Post-launch",
+    timeframe: "Mid-funnel rebuild",
     color: "#6C63FF",
   },
   {
@@ -34,10 +34,10 @@ const cases = [
     challenge: "Paid search was running but return on ad spend was too low to justify scaling.",
     results: [
       { metric: "ROAS", before: "5x", after: "20x" },
-      { metric: "Channel", before: "Paid Search", after: "Paid Search" },
-      { metric: "Result", before: "Underperforming", after: "Scaled" },
+      { metric: "Revenue per $1 spent", before: "$5", after: "$20" },
+      { metric: "Campaign Status", before: "Stagnant", after: "Scaled" },
     ],
-    timeframe: "Paid search",
+    timeframe: "Paid search overhaul",
     color: "#F39C12",
   },
 ];
@@ -66,8 +66,8 @@ export default function CaseStudies() {
           >
             <div>
               <h2 className="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-2xl">
-                Real campaigns.
-                <span className="text-[#FF2D55]"> Real numbers.</span>
+                Real campaigns.{" "}
+                <span className="text-[#FF2D55] whitespace-nowrap">Real numbers.</span>
               </h2>
               <p className="text-white/30 text-sm mt-2">These numbers are wild. We know.</p>
             </div>

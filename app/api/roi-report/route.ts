@@ -59,7 +59,7 @@ export async function POST(req: NextRequest) {
           </table>
 
           <a href="http://172.105.104.4:8080#contact" style="display: block; text-align: center; background: #FF2D55; color: white; font-weight: bold; padding: 16px; border-radius: 12px; text-decoration: none; margin-bottom: 24px;">
-            Claim My Free Audit →
+            Start Winning Now →
           </a>
 
           <p style="color: rgba(248,248,252,0.3); font-size: 12px; text-align: center;">

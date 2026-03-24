@@ -10,9 +10,9 @@ const benefits = [
     desc: "Need paid media muscle without hiring in-house? We plug into your agency seamlessly — your brand, our execution.",
   },
   {
-    icon: "📬",
-    title: "Referral Partnerships",
-    desc: "Send us a client, earn a referral fee. We protect your relationship and keep you in the loop throughout.",
+    icon: "📊",
+    title: "Strategy & Reporting",
+    desc: "We handle the paid media strategy, execution, and reporting — delivered under your agency's brand so your clients see seamless results.",
   },
   {
     icon: "⚡",
@@ -61,9 +61,9 @@ export default function AgencyPartners() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-[#0F0E17]/60 text-lg leading-relaxed mb-8"
             >
-              Whether you need white-label paid media, overflow capacity, or a
-              referral partner your clients will love — we work with agencies to
-              deliver premium results without the overhead.
+              Whether you need white-label paid media, overflow capacity, or
+              a dedicated paid media partner — we work with agencies to deliver
+              premium results under your brand, without the overhead.
             </motion.p>
             <motion.a
               href="#contact"

@@ -7,7 +7,7 @@ const industries = [
   {
     icon: "🏥",
     name: "Healthcare",
-    tagline: "More booked appointments. Same ad budget.",
+    tagline: "Turn ad clicks into booked appointments.",
     points: [
       "Ads that bring in new patients — not just clicks",
       "Local & multi-location campaign targeting",
@@ -62,7 +62,8 @@ export default function Industries() {
             className="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-3xl mb-16"
           >
             Industries I know
-            <span className="text-[#FF2D55]"> inside and out.</span>
+            <br />
+            <span className="text-[#FF2D55]">inside and out.</span>
           </motion.h2>
         </div>
 
