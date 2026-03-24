@@ -12,6 +12,7 @@ import About from "@/components/About";
 import Industries from "@/components/Industries";
 import AgencyPartners from "@/components/AgencyPartners";
 import CaseStudies from "@/components/CaseStudies";
+import WhoIWorkWith from "@/components/WhoIWorkWith";
 import FAQ from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
@@ -31,6 +32,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <Ticker />
+      <WhoIWorkWith />
       <Stats />
       <Services />
       <About />
