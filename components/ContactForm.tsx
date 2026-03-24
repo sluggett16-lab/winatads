@@ -116,8 +116,8 @@ export default function ContactForm() {
                   Message sent!
                 </h3>
                 <p className="text-white/50">
-                  Thanks for reaching out. We&apos;ll be in touch within one
-                  business day.
+                  Thanks for reaching out. We&apos;ll be in touch within
+                  3–5 business days.
                 </p>
               </div>
             ) : (

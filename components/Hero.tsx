@@ -34,12 +34,6 @@ export default function Hero() {
 
       {/* Content — always visible, no opacity:0 initial state */}
       <div className="relative z-10 text-center max-w-5xl mx-auto">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-sm text-white/60 mb-8">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#FF2D55] animate-pulse" />
-          Certified ad nerds. (The fun kind.)
-        </div>
-
         {/* Headline */}
         <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.1] tracking-tight mb-2">
           <span className="block text-white">
