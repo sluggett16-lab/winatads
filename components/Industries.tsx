@@ -7,34 +7,34 @@ const industries = [
   {
     icon: "🏥",
     name: "Healthcare",
-    tagline: "Fill your calendar, not just your feeds.",
+    tagline: "More booked appointments. Same ad budget.",
     points: [
-      "Patient acquisition campaigns",
-      "HIPAA-compliant ad strategies",
-      "Local & multi-location targeting",
-      "Booking-focused conversion tracking",
+      "Ads that bring in new patients — not just clicks",
+      "Local & multi-location campaign targeting",
+      "Tracking set up so you know which ads book appointments",
+      "Campaigns built around your slow seasons and busy periods",
     ],
   },
   {
     icon: "💻",
     name: "SaaS",
-    tagline: "Lower CAC. Higher LTV. Faster growth.",
+    tagline: "More trials, demos, and paying customers.",
     points: [
-      "Trial & demo signup campaigns",
-      "Retargeting for free-to-paid conversion",
-      "ABM-style B2B targeting",
-      "Full-funnel attribution setup",
+      "Campaigns built to drive signups and demo requests",
+      "Retargeting people who visited but didn't convert",
+      "Targeted B2B ads that reach the right decision-makers",
+      "Clear reporting on what's actually driving new customers",
     ],
   },
   {
     icon: "🏨",
-    name: "Resorts & Hotels",
-    tagline: "Put heads in beds. Profitably.",
+    name: "Hospitality",
+    tagline: "More direct bookings. Less commission to OTAs.",
     points: [
-      "Seasonal campaign strategy",
-      "Direct booking vs OTA campaigns",
-      "Geo-targeted awareness + retargeting",
-      "Package and upsell promotion",
+      "Paid search campaigns that fill rooms directly",
+      "Seasonal strategies for your busy and slow periods",
+      "Geo-targeted ads to reach travelers before they book",
+      "Packages and upsells promoted to the right audience",
     ],
   },
 ];
@@ -61,8 +61,8 @@ export default function Industries() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-3xl mb-16"
           >
-            Deep expertise in the sectors that
-            <span className="text-[#FF2D55]"> matter most.</span>
+            Industries I know
+            <span className="text-[#FF2D55]"> inside and out.</span>
           </motion.h2>
         </div>
 

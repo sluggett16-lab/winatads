@@ -7,37 +7,37 @@ const services = [
   {
     icon: "📈",
     title: "Paid Ads Management",
-    desc: "Full-service campaign management across Google, Meta, TikTok, LinkedIn, and more. We handle everything from strategy to daily optimizations.",
+    desc: "More leads, more bookings, more sales — without burning your budget trying to figure it out yourself. I handle everything from strategy to daily optimizations across Google, Meta, TikTok, LinkedIn, and more.",
     color: "#FF2D55",
   },
   {
     icon: "🔍",
     title: "Ad Audits",
-    desc: "Brutally honest audits of your current ad accounts. We'll tell you exactly what's burning your budget and how to fix it — fast.",
+    desc: "Find out exactly where your ad budget is leaking — and get a clear plan to fix it. No fluff, just straight answers about what's working, what isn't, and what to do next.",
     color: "#FF6B35",
   },
   {
     icon: "🎨",
     title: "Branding for Ads",
-    desc: "Ad creative that stops the scroll. We develop visual identities and ad concepts that make your brand impossible to ignore.",
+    desc: "Ads that actually stop people from scrolling past your business. I develop creative concepts and ad visuals that make your brand stand out — even in a crowded feed.",
     color: "#9B59B6",
   },
   {
     icon: "📊",
     title: "Tracking & Analytics",
-    desc: "GA4, GTM, Meta Pixel, Conversions API — we set up airtight tracking so every dollar has a clear attribution path.",
+    desc: "Know exactly which ads are bringing in customers — and which ones aren't worth a cent. I set up proper tracking so you're making decisions based on real data, not guesses.",
     color: "#3498DB",
   },
   {
     icon: "📋",
     title: "Reporting Dashboards",
-    desc: "Beautiful, live dashboards your team will actually use. Built in Looker Studio or custom — no more spreadsheet chaos.",
+    desc: "See how your ads are performing in plain English, anytime you want. Live dashboards built in Looker Studio — no spreadsheets, no waiting on a monthly report.",
     color: "#2ECC71",
   },
   {
     icon: "💡",
     title: "Strategy & Consulting",
-    desc: "Not sure where to start? We'll map your full paid media strategy, identify quick wins, and build a roadmap to scale.",
+    desc: "Not sure where to start or why your ads aren't working? Let's figure it out together. I'll map out what will actually move the needle for your specific business and budget.",
     color: "#F39C12",
   },
 ];
@@ -122,7 +122,7 @@ export default function Services() {
             transition={{ duration: 0.5 }}
             className="text-[#FF2D55] font-semibold text-sm uppercase tracking-widest mb-4"
           >
-            The Arsenal
+            What I Do For You
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 24 }}
@@ -130,8 +130,8 @@ export default function Services() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-3xl"
           >
-            Everything you need to <span className="text-[#FF2D55]">stop</span>{" "}
-            <span className="text-[#FF2D55]">losing money on ads.</span>
+            Everything you need to <span className="text-[#FF2D55]">stop losing money</span>{" "}
+            and start getting results.
           </motion.h2>
         </div>
 

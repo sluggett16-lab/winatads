@@ -70,9 +70,9 @@ export default function ContactForm() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6"
             >
-              Your ads called.
+              Ready to get more out of every
               <br />
-              <span className="text-[#FF2D55]">They want better management.</span>
+              <span className="text-[#FF2D55]">dollar you spend on ads?</span>
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -80,8 +80,9 @@ export default function ContactForm() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-white/50 text-lg leading-relaxed mb-8"
             >
-              Tell us what&apos;s going on with your ads. We&apos;ll be honest
-              even if it hurts — and then we&apos;ll fix it.
+              Tell me about your business — where you&apos;re at, what&apos;s not working,
+              and what you&apos;re trying to grow. I&apos;ll be straight with you about
+              what I see and what I&apos;d do differently.
             </motion.p>
 
             <motion.div
@@ -91,9 +92,9 @@ export default function ContactForm() {
               className="space-y-5"
             >
               {[
-                { icon: "⚡", text: "No sales pitch — just a real conversation" },
-                { icon: "🎯", text: "We'll tell you exactly what's broken (for free)" },
-                { icon: "🇨🇦", text: "Canada & USA — we've got you" },
+                { icon: "⚡", text: "No jargon — I'll explain everything in plain English" },
+                { icon: "🎯", text: "Free honest look at what's actually going on with your ads" },
+                { icon: "🇨🇦", text: "Canada & USA — I've got you" },
               ].map((item) => (
                 <div key={item.text} className="flex items-center gap-4">
                   <span className="text-xl">{item.icon}</span>

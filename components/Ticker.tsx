@@ -1,19 +1,19 @@
 export default function Ticker() {
   const items = [
-    "PAID ADS",
-    "NO BS",
+    "MORE LEADS",
+    "MORE BOOKINGS",
     "GOOGLE",
-    "CRUSHING IT",
+    "NO GUESSWORK",
     "META",
-    "JUST ROAS",
+    "BETTER ROAS",
     "TIKTOK",
-    "YOUR COMPETITORS ARE SCARED",
+    "MORE CUSTOMERS",
     "LINKEDIN",
     "RESULTS OR BUST",
     "AUDITS",
-    "WE GO HARD",
+    "YOUR BUDGET WORKING HARDER",
     "CONVERSIONS",
-    "CERTIFIED WINNERS",
+    "REAL RESULTS",
   ];
 
   const repeated = [...items, ...items];

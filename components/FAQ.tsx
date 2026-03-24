@@ -6,7 +6,7 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 const faqs = [
   {
     q: "What makes Win at Ads different from other paid media agencies?",
-    a: "Most agencies optimize for their own retainer renewal — we optimize for your revenue. We move fast, communicate clearly, and treat your budget like it's our own money on the line.",
+    a: "You work directly with me — Laura — not a junior account manager who's juggling 40 other clients. I treat your budget like it's my own money, communicate clearly, and focus on one thing: getting you more customers.",
   },
   {
     q: "Which ad platforms do you work with?",
@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: "What's the minimum budget to work with Win at Ads?",
-    a: "We typically work with clients investing at least $3,000/month in ad spend. Below that, it's hard to gather enough data to optimize effectively. We're also happy to chat if you're scaling up toward that range.",
+    a: "I typically work with businesses investing at least $3,000/month in ad spend. Below that, there isn't enough budget to properly test, learn, and scale — and I'd rather be upfront about that than take your money and underdeliver. If you're working toward that range, I'm still happy to have a conversation and talk through your options.",
   },
   {
     q: "Do you offer white-label services for agencies?",

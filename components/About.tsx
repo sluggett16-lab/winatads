@@ -48,9 +48,9 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-[#0F0E17]/60 text-lg leading-relaxed mb-6"
             >
-              With 7+ years running paid media across every major platform, I&apos;ve
-              managed millions in ad spend for healthcare practices, SaaS
-              startups, and hospitality brands across Canada and the US.
+              I&apos;ve spent 7+ years in the weeds of paid media — managing campaigns
+              for local healthcare clinics, scrappy SaaS startups, and boutique hotels
+              across Canada and the US. Big budgets, small budgets — I&apos;ve worked with them all.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -68,9 +68,9 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-[#0F0E17]/60 text-lg leading-relaxed mb-8"
             >
-              I built Win at Ads because most agencies optimize for their
-              retainer, not your ROI. I do things differently — obsessively,
-              transparently, and with your revenue as the only metric that matters.
+              I built Win at Ads because small and medium businesses deserve the same
+              quality of paid media as the big brands — without the agency markup, the
+              account manager shuffle, or the confusing monthly reports that tell you nothing.
             </motion.p>
 
             {/* Credentials */}

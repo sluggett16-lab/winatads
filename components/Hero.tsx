@@ -55,16 +55,16 @@ export default function Hero() {
               <span className="text-[#FF2D55]">{platforms[0]}</span>
             )}
           </span>
-          <span className="block text-white">Should Be Winning.</span>
+          <span className="block text-white">Should Be Getting You More Customers.</span>
         </h1>
         <p className="text-2xl md:text-4xl font-extrabold text-[#FF2D55]/70 mt-2 mb-10">
-          Want to fix that?
+          Let&apos;s make that happen.
         </p>
 
         {/* Subhead */}
         <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto mb-10 leading-relaxed">
-          We run paid ads like it&apos;s personal. Because your budget is real money
-          and wasting it is a crime. No fluff, no retainer-padding — just ads that convert.
+          You started your business to do what you love — not to figure out why your ads aren&apos;t working.
+          That&apos;s what I&apos;m here for. Real campaigns, real results, no guesswork.
         </p>
 
         {/* CTAs */}
