@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
@@ -99,17 +100,16 @@ export default function About() {
             className="relative"
           >
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-[#0F0E17]/10">
-              {/* Photo placeholder */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                <div className="w-24 h-24 rounded-full bg-[#FF2D55]/20 flex items-center justify-center">
-                  <span className="text-4xl">👋</span>
-                </div>
-                <p className="text-[#0F0E17]/30 text-sm font-medium">
-                  Photo coming soon
-                </p>
-              </div>
+              <Image
+                src="/laura.jpg"
+                alt="Laura — Win at Ads founder"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
               {/* Decorative border */}
-              <div className="absolute inset-0 rounded-3xl border-2 border-[#FF2D55]/20" />
+              <div className="absolute inset-0 rounded-3xl border-2 border-[#FF2D55]/20 pointer-events-none" />
             </div>
             {/* Floating badge */}
             <div className="absolute -bottom-6 left-6 bg-[#FF2D55] text-white rounded-2xl px-5 py-4 shadow-xl">

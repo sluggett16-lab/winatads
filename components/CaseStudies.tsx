@@ -6,38 +6,38 @@ import { motion, useInView } from "framer-motion";
 const cases = [
   {
     industry: "Healthcare",
-    client: "Multi-location physiotherapy clinic",
-    challenge: "Spending $8K/mo on Google Ads with no conversion tracking and a 2.1% booking rate.",
+    client: "Telehealth provider",
+    challenge: "Paid campaigns driving traffic but booking costs were too high to scale profitably.",
     results: [
-      { metric: "Booking Rate", before: "2.1%", after: "6.8%" },
-      { metric: "Cost Per Lead", before: "$94", after: "$31" },
-      { metric: "Monthly Bookings", before: "48", after: "187" },
+      { metric: "Conversion Rate", before: "25%", after: "35%" },
+      { metric: "Cost Per Booking", before: "$10", after: "$3" },
+      { metric: "Ad Spend", before: "Same", after: "Same" },
     ],
-    timeframe: "90 days",
+    timeframe: "Same spend",
     color: "#FF2D55",
   },
   {
     industry: "SaaS",
-    client: "B2B project management tool",
-    challenge: "High CPCs on Google with a $180 CAC that was destroying unit economics.",
+    client: "B2B software platform",
+    challenge: "Top-of-funnel campaigns weren't converting — leads were dropping off before purchase.",
     results: [
-      { metric: "Trial Signups", before: "210/mo", after: "580/mo" },
-      { metric: "CAC", before: "$180", after: "$67" },
-      { metric: "ROAS", before: "1.8x", after: "4.9x" },
+      { metric: "Conversions", before: "Baseline", after: "+40%" },
+      { metric: "Strategy", before: "Top-funnel only", after: "Mid-funnel" },
+      { metric: "Pipeline Quality", before: "Low", after: "High" },
     ],
-    timeframe: "6 months",
+    timeframe: "Post-launch",
     color: "#6C63FF",
   },
   {
     industry: "Hospitality",
-    client: "Boutique resort in Muskoka, ON",
-    challenge: "Over-reliance on OTAs eating into margins. Direct bookings under 20%.",
+    client: "Hotel & resort",
+    challenge: "Paid search was running but return on ad spend was too low to justify scaling.",
     results: [
-      { metric: "Direct Bookings", before: "18%", after: "54%" },
-      { metric: "Revenue Per Visit", before: "$4.20", after: "$11.80" },
-      { metric: "Summer ROAS", before: "2.3x", after: "6.1x" },
+      { metric: "ROAS", before: "5x", after: "20x" },
+      { metric: "Channel", before: "Paid Search", after: "Paid Search" },
+      { metric: "Result", before: "Underperforming", after: "Scaled" },
     ],
-    timeframe: "1 season",
+    timeframe: "Paid search",
     color: "#F39C12",
   },
 ];
@@ -72,7 +72,7 @@ export default function CaseStudies() {
               <p className="text-white/30 text-sm mt-2">These numbers are wild. We know.</p>
             </div>
             <p className="text-white/40 text-sm max-w-xs">
-              *Mock data shown. Real results vary by industry, budget, and baseline.
+              Real results. Same principles applied to your account.
             </p>
           </motion.div>
         </div>
